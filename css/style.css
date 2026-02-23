@@ -77,9 +77,34 @@ table {
   overflow: hidden;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    aspect-ratio: 160 / 89;
+  }
+}
+
 .hero__image {
+  display: none;
   width: 100%;
+}
+
+@media (min-width:768px){
+.hero__image {
+  display: none;
   height: 100%;
+  opacity: 0;
+  transition: opacity 1000ms ease;
+}
+}
+
+.hero__image--active {
+  display: block;
+}
+
+@media (min-width:768px){
+.hero__image--active {
+  opacity: 1;
+}
 }
 
 .hero__official-logo{
@@ -107,8 +132,12 @@ table {
     display: block;
     position: absolute;
     top: 60%;
-    right:-130px;
+    right: -18%;
     width: 30vw;
+    transition: right 1000ms ease;
+  }
+  .hero__cta:hover{
+    right: 0;
   }
 }
 
