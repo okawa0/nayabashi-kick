@@ -99,6 +99,20 @@ table {
   }
 }
 
+.hero__cta{
+  display: none;
+}
+
+@media (min-width:768px){
+  .hero__cta{
+    display: block;
+    position: absolute;
+    top: 60%;
+    right:-130px;
+    width: 30vw;
+  }
+}
+
 .hero__rotation-logo{
   position:absolute;
   top:60%;
