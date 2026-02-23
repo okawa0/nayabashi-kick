@@ -81,7 +81,6 @@ table {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .hero__official-logo{
@@ -91,11 +90,26 @@ table {
   width: 20vw;
 }
 
+@media (min-width:768px){
+  .hero__official-logo{
+    top: 200px;
+    left: auto;
+    right: 16px;
+    width: 10vw;
+  }
+}
+
 .hero__rotation-logo{
   position:absolute;
   top:60%;
   left: 16px;
   width: 30vw;
+}
+
+@media (min-width:768px){
+  .hero__rotation-logo{
+    display: none;
+  }
 }
 
 .hero__title{
@@ -138,13 +152,40 @@ table {
   display: flex;
   width: max-content;
   animation: scroll 35s linear infinite;
+  z-index: 1;
+}
+
+@media (min-width:768px){
+  .hero__scroll-text{
+    bottom: 0 ;
+  }
 }
 
 .hero__scroll-img{
   width: 350vw;
 }
 
+@media (min-width:768px){
+  .hero__scroll-img{
+    width: 240vw;
+  }
+}
+
 @keyframes scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
+}
+
+.hero__arrangement{
+    display: none;
+}
+
+@media (min-width:768px){
+  .hero__arrangement{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80vw;
+  }
 }
