@@ -83,9 +83,19 @@ table {
   }
 }
 
+.hero__image-sp {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero__image-sp {
+    display: none;
+  }
+}
+
 .hero__image {
   display: none;
-  width: 100%;
 }
 
 @media (min-width:768px){
@@ -99,10 +109,6 @@ table {
     opacity: 0;
     transition: opacity 1000ms ease;
 }
-}
-
-.hero__image--active {
-  display: block;
 }
 
 @media (min-width:768px){
