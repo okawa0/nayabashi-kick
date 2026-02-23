@@ -1,0 +1,143 @@
+/* =========================
+    リセットCSS（A型GPTで生成）
+========================= */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Margin reset */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
+/* Body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Media defaults */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  /* pictureで画像サイズを調整するために追加 */
+  width: 100%;
+  height: auto;
+}
+
+/* Form elements inherit font */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* =========================
+    Main
+========================= */
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero__official-logo{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 20vw;
+}
+
+.hero__rotation-logo{
+  position:absolute;
+  top:60%;
+  left: 16px;
+  width: 30vw;
+}
+
+.hero-title{
+  width: 100%;
+}
+
+.hero-title,.hero__main-logo{
+  position: absolute;
+}
+
+.spin{
+  animation: rotate 12s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.hero__catchcopy{
+  position:absolute;
+  top: 50%;
+  right: 0;
+  width: 65vw;
+}
+
+@media (min-width:768px){
+  .hero__catchcopy{
+    display: none;
+  }
+}
+
+.hero__scroll-text{
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+
+.hero__scroll-img{
+  width: 350vw;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
