@@ -92,7 +92,7 @@ table {
 
 @media (min-width:768px){
   .hero__official-logo{
-    top: 200px;
+    top: 40%;
     left: auto;
     right: 16px;
     width: 10vw;
