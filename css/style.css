@@ -253,10 +253,20 @@ table {
   margin-top: 56px;
 }
 
+.swiper {
+  --swiper-navigation-size: 4vw;
+}
+
 .swiper-button-prev {
   color: #fff;
 }
 
 .swiper-button-next {
   color: #fff;
+}
+
+.swiper-pagination {
+  position: static;
+  --swiper-pagination-color: #000;
+  --swiper-pagination-bullet-inactive-color: #555;
 }
