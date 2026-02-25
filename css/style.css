@@ -238,3 +238,9 @@ table {
     width: 80vw;
   }
 }
+
+/* ---------- Carousel Banner ---------- */
+
+.carousel-banner{
+  margin-top: 56px;
+}

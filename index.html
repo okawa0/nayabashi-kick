@@ -11,7 +11,15 @@
       content="名古屋駅・伏見駅より約10分の徒歩圏内の納屋橋エリア唯一のキックボクシングジムです。名古屋最安！常設リング、綺麗なシャワー付き更衣室を完備。女性にも通いやすい女性限定クラスもあります。"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="js/script.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
   </head>
   <body>
     <main>
@@ -153,7 +161,37 @@
       </section>
 
       <!-- カルーセルバナー -->
-      <section class="carousel-banner"></section>
+      <div class="swiper carousel-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="images/member-intensive-training-campaign-banner.webp"
+              alt="会員様向け集中トレーニング健康キャンペーンのバナー"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/kickboxing-newyear-campaign-banner.webp"
+              alt="限定30名で初回月会費・手数料・体験料金 0円になるお年玉キャンペーンのバナー"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/kusunoki-champion-announcement-banner.webp"
+              alt="楠ジャイロ選手が2024年12月にホーストカップヘビー級のチャンピオンになったというバナー"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/gym-24hour-availability-banner.webp"
+              alt="ジム利用が24時間利用可能になったというバナー"
+            />
+          </div>
+        </div>
+        <!-- ナビゲーションボタン -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
 
       <!-- お知らせ -->
       <section class="news">
