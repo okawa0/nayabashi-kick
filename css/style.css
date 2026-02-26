@@ -165,19 +165,19 @@ table {
   margin-top: 56px;
 }
 
-.swiper {
+.carousel-banner .swiper {
   --swiper-navigation-size: 4vw;
 }
 
-.swiper-button-prev {
+.carousel-banner .swiper-button-prev {
   color: #fff;
 }
 
-.swiper-button-next {
+.carousel-banner .swiper-button-next {
   color: #fff;
 }
 
-.swiper-pagination {
+.carousel-banner .swiper-pagination {
   position: static;
   --swiper-pagination-color: #000;
   --swiper-pagination-bullet-inactive-color: #555;
@@ -303,27 +303,27 @@ table {
     width: 80vw;
   }
 
-  /* ---------- Carousel Banner ---------- */
+/* ---------- Carousel Banner ---------- */
 
-  .carousel-banner {
-    margin-top: 56px;
-  }
+.carousel-banner {
+  margin-top: 56px;
+}
 
-  .swiper {
-    --swiper-navigation-size: 4vw;
-  }
+.carousel-banner .swiper {
+  --swiper-navigation-size: 4vw;
+}
 
-  .swiper-button-prev {
-    color: #fff;
-  }
+.carousel-banner .swiper-button-prev {
+  color: #fff;
+}
 
-  .swiper-button-next {
-    color: #fff;
-  }
+.carousel-banner .swiper-button-next {
+  color: #fff;
+}
 
-  .swiper-pagination {
-    position: static;
-    --swiper-pagination-color: #000;
-    --swiper-pagination-bullet-inactive-color: #555;
-  }
+.carousel-banner .swiper-pagination {
+  position: static;
+  --swiper-pagination-color: #000;
+  --swiper-pagination-bullet-inactive-color: #555;
+}
 }
