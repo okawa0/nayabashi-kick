@@ -77,44 +77,13 @@ table {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    aspect-ratio: 160 / 89;
-  }
-}
-
 .hero__image-sp {
   display: block;
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  .hero__image-sp {
-    display: none;
-  }
-}
-
 .hero__image {
   display: none;
-}
-
-@media (min-width: 768px) {
-  .hero__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1000ms ease;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero__image--active {
-    opacity: 1;
-  }
 }
 
 .hero__official-logo {
@@ -124,31 +93,8 @@ table {
   width: 20vw;
 }
 
-@media (min-width: 768px) {
-  .hero__official-logo {
-    top: 40%;
-    left: auto;
-    right: 16px;
-    width: 10vw;
-  }
-}
-
 .hero__cta {
   display: none;
-}
-
-@media (min-width: 768px) {
-  .hero__cta {
-    display: block;
-    position: absolute;
-    top: 60%;
-    right: -18%;
-    width: 30vw;
-    transition: right 1000ms ease;
-  }
-  .hero__cta:hover {
-    right: 0;
-  }
 }
 
 .hero__rotation-logo {
@@ -156,12 +102,6 @@ table {
   top: 60%;
   left: 16px;
   width: 30vw;
-}
-
-@media (min-width: 768px) {
-  .hero__rotation-logo {
-    display: none;
-  }
 }
 
 .hero__title {
@@ -193,12 +133,6 @@ table {
   width: 65vw;
 }
 
-@media (min-width: 768px) {
-  .hero__catchcopy {
-    display: none;
-  }
-}
-
 .hero__scroll-text {
   position: absolute;
   bottom: 16px;
@@ -208,20 +142,8 @@ table {
   z-index: 1;
 }
 
-@media (min-width: 768px) {
-  .hero__scroll-text {
-    bottom: 0;
-  }
-}
-
 .hero__scroll-img {
   width: 350vw;
-}
-
-@media (min-width: 768px) {
-  .hero__scroll-img {
-    width: 240vw;
-  }
 }
 
 @keyframes scroll {
@@ -235,16 +157,6 @@ table {
 
 .hero__arrangement {
   display: none;
-}
-
-@media (min-width: 768px) {
-  .hero__arrangement {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 80vw;
-  }
 }
 
 /* ---------- Carousel Banner ---------- */
@@ -269,4 +181,149 @@ table {
   position: static;
   --swiper-pagination-color: #000;
   --swiper-pagination-bullet-inactive-color: #555;
+}
+
+/* =========================
+    min-width:768px
+========================= */
+
+@media (min-width: 768px) {
+  /* ---------- Hero ---------- */
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 160 / 89;
+  }
+
+  .hero__image-sp {
+    display: none;
+    width: 100%;
+  }
+
+  .hero__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1000ms ease;
+  }
+
+  .hero__image--active {
+    opacity: 1;
+  }
+
+  .hero__official-logo {
+    position: absolute;
+    top: 40%;
+    left: auto;
+    right: 16px;
+    width: 10vw;
+  }
+
+  .hero__cta {
+    display: block;
+    position: absolute;
+    top: 60%;
+    right: -18%;
+    width: 30vw;
+    transition: right 1000ms ease;
+  }
+
+  .hero__cta:hover {
+    right: 0;
+  }
+
+  .hero__rotation-logo {
+    display: none;
+  }
+
+  .hero__title {
+    position: absolute;
+    width: 100%;
+  }
+
+  .hero__main-logo {
+    position: absolute;
+  }
+
+  .spin {
+    animation: rotate 12s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .hero__catchcopy {
+    display: none;
+  }
+
+  .hero__scroll-text {
+    position: absolute;
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    animation: scroll 35s linear infinite;
+    z-index: 1;
+    bottom: 0;
+  }
+
+  .hero__scroll-img {
+    width: 240vw;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .hero__arrangement {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80vw;
+  }
+
+  /* ---------- Carousel Banner ---------- */
+
+  .carousel-banner {
+    margin-top: 56px;
+  }
+
+  .swiper {
+    --swiper-navigation-size: 4vw;
+  }
+
+  .swiper-button-prev {
+    color: #fff;
+  }
+
+  .swiper-button-next {
+    color: #fff;
+  }
+
+  .swiper-pagination {
+    position: static;
+    --swiper-pagination-color: #000;
+    --swiper-pagination-bullet-inactive-color: #555;
+  }
 }
