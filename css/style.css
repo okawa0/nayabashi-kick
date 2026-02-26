@@ -86,7 +86,7 @@ table {
   display: none;
 }
 
-.hero__official-logo {
+.hero__logo--official {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -97,7 +97,7 @@ table {
   display: none;
 }
 
-.hero__rotation-logo {
+.hero__logo--rotation {
   position: absolute;
   top: 60%;
   left: 16px;
@@ -109,7 +109,7 @@ table {
   width: 100%;
 }
 
-.hero__main-logo {
+.hero__logo--main {
   position: absolute;
 }
 
@@ -216,7 +216,7 @@ table {
     opacity: 1;
   }
 
-  .hero__official-logo {
+  .hero__logo--official {
     position: absolute;
     top: 40%;
     left: auto;
@@ -237,7 +237,7 @@ table {
     right: 0;
   }
 
-  .hero__rotation-logo {
+  .hero__logo--rotation {
     display: none;
   }
 
@@ -246,7 +246,7 @@ table {
     width: 100%;
   }
 
-  .hero__main-logo {
+  .hero__logo--main {
     position: absolute;
   }
 
@@ -297,27 +297,27 @@ table {
     width: 80vw;
   }
 
-/* ---------- Carousel Banner ---------- */
+  /* ---------- Carousel Banner ---------- */
 
-.carousel-banner {
-  margin-top: 56px;
-}
+  .carousel-banner {
+    margin-top: 56px;
+  }
 
-.carousel-banner .swiper {
-  --swiper-navigation-size: 4vw;
-}
+  .carousel-banner .swiper {
+    --swiper-navigation-size: 4vw;
+  }
 
-.carousel-banner .swiper-button-prev {
-  color: #fff;
-}
+  .carousel-banner .swiper-button-prev {
+    color: #fff;
+  }
 
-.carousel-banner .swiper-button-next {
-  color: #fff;
-}
+  .carousel-banner .swiper-button-next {
+    color: #fff;
+  }
 
-.carousel-banner .swiper-pagination {
-  position: static;
-  --swiper-pagination-color: #000;
-  --swiper-pagination-bullet-inactive-color: #555;
-}
+  .carousel-banner .swiper-pagination {
+    position: static;
+    --swiper-pagination-color: #000;
+    --swiper-pagination-bullet-inactive-color: #555;
+  }
 }
