@@ -1,6 +1,11 @@
 /* =========================
-    Reset CSS（A型GPTで生成）
+   1. Base
 ========================= */
+
+:root {
+  --font-base: "Noto Sans JP", sans-serif;
+  --color-base: #333;
+}
 
 *,
 *::before,
@@ -16,6 +21,8 @@ body {
   margin: 0;
   line-height: 1.6;
   -webkit-text-size-adjust: 100%;
+  font-family: var(--font-base);
+  color: var(--color-base);
 }
 
 h1,
@@ -66,9 +73,9 @@ table {
   border-spacing: 0;
 }
 
-/* =========================
-    Main
-========================= */
+/* ================================
+   2. Layout Blocks
+================================ */
 
 /* ---------- Hero ---------- */
 
@@ -183,19 +190,47 @@ table {
   --swiper-pagination-bullet-inactive-color: #555;
 }
 
-  /* ---------- News ---------- */
-.news{
+/* ---------- News ---------- */
+.news {
   margin-top: 24px;
 }
 
-.news-hr--bold{
-  border-width: 2px;
-  color: #000;
+.news-hr--bold {
+  border: 1.2px solid #707070;
 }
 
-/* =========================
-    min-width:768px
-========================= */
+.news-hr {
+  margin-top: 10px;
+}
+
+/* ================================
+   3. Component Blocks
+================================ */
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 0;
+  font-size: 32px;
+  letter-spacing: 4px;
+  font-family: "Noto Sans JP";
+  font-style: italic;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #444444;
+}
+
+/* ==================================
+    4. Responsive (min-width:768px)
+=================================== */
 
 @media (min-width: 768px) {
   /* ---------- Hero ---------- */
