@@ -86,18 +86,18 @@ table {
   display: none;
 }
 
-.hero__logo--official {
+.hero-logo__official {
   position: absolute;
   top: 16px;
   left: 16px;
   width: 20vw;
 }
 
-.hero__cta {
+.hero-cta {
   display: none;
 }
 
-.hero__logo--rotation {
+.hero-logo__rotation {
   position: absolute;
   top: 60%;
   left: 16px;
@@ -109,7 +109,7 @@ table {
   width: 100%;
 }
 
-.hero__logo--main {
+.hero-logo__main {
   position: absolute;
 }
 
@@ -133,7 +133,7 @@ table {
   width: 65vw;
 }
 
-.hero__scroll-text {
+.hero-scroll__text {
   position: absolute;
   bottom: 16px;
   display: flex;
@@ -142,7 +142,7 @@ table {
   animation: scroll 35s linear infinite;
 }
 
-.hero__scroll-img {
+.hero-scroll__img {
   width: 350vw;
 }
 
@@ -183,6 +183,16 @@ table {
   --swiper-pagination-bullet-inactive-color: #555;
 }
 
+  /* ---------- News ---------- */
+.news{
+  margin-top: 24px;
+}
+
+.news-hr--bold{
+  border-width: 2px;
+  color: #000;
+}
+
 /* =========================
     min-width:768px
 ========================= */
@@ -216,7 +226,7 @@ table {
     opacity: 1;
   }
 
-  .hero__logo--official {
+  .hero-logo__official {
     position: absolute;
     top: 40%;
     left: auto;
@@ -224,7 +234,7 @@ table {
     width: 10vw;
   }
 
-  .hero__cta {
+  .hero-cta {
     display: block;
     position: absolute;
     top: 60%;
@@ -233,11 +243,11 @@ table {
     transition: right 1000ms ease;
   }
 
-  .hero__cta:hover {
+  .hero-cta:hover {
     right: 0;
   }
 
-  .hero__logo--rotation {
+  .hero-logo__rotation {
     display: none;
   }
 
@@ -246,7 +256,7 @@ table {
     width: 100%;
   }
 
-  .hero__logo--main {
+  .hero-logo__main {
     position: absolute;
   }
 
@@ -267,7 +277,7 @@ table {
     display: none;
   }
 
-  .hero__scroll-text {
+  .hero-scroll__text {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -276,7 +286,7 @@ table {
     animation: scroll 35s linear infinite;
   }
 
-  .hero__scroll-img {
+  .hero-scroll__img {
     width: 240vw;
   }
 
