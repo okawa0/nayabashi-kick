@@ -22,22 +22,39 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // カルーセルバナー
-document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".swiper", {
+window.addEventListener("load", () => {
+  const el = document.querySelector('[data-js="swiper"]');
+  if (!el) return;
+
+  new Swiper(el, {
     loop: true,
-        breakpoints: {
+
+    slidesPerView: 1,
+
+    breakpoints: {
       768: {
         slidesPerView: 2,
       },
     },
+
+    spaceBetween: 16,
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    spaceBetween: 16, // ← ここで間隔指定（px）
+
     pagination: {
       el: ".swiper-pagination",
-      clickable: true, // ← クリックで移動できる
+      clickable: true,
     },
+
+    autoplay: {
+      delay: 3000,              // 次に動き出すまでの待機時間
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+
+    speed: 1000,                // ← アニメーション時間（ms）
   });
 });
