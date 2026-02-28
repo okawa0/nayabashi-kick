@@ -442,22 +442,26 @@ table {
   }
 
   .news__list {
-    margin-top: 24px;
+    margin: 24px auto 0;
     padding-inline: 24px;
+    width: 600px;
     font-weight: 500;
   }
 
   .news__item {
+    display: flex;
     margin-top: 16px;
     padding-bottom: 12px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: none;
   }
 
   .news__date {
+    flex: 0 0 150px;
     font-size: 14px;
   }
 
   .news__heading {
+    flex: 1;
     overflow: hidden;
     font-size: 14px;
     white-space: nowrap;
