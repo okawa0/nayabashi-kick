@@ -251,10 +251,10 @@ table {
   font-weight: inherit;
 }
 
-.news__btn{
+.news__btn {
   width: 200px;
   height: auto;
-  margin:36px auto 0;
+  margin: 36px auto 0;
 }
 
 /* ================================
@@ -397,5 +397,77 @@ table {
     position: static;
     --swiper-pagination-color: #000;
     --swiper-pagination-bullet-inactive-color: #555;
+  }
+
+  /* ---------- News ---------- */
+  .news {
+    margin-top: 24px;
+  }
+
+  .news__divider--bold {
+    border: 1.2px solid #707070;
+  }
+
+  .news__divider {
+    margin-top: 10px;
+  }
+
+  .news__body {
+    padding-block: 20px;
+  }
+
+  .news__title {
+    position: relative;
+    display: block;
+    margin-top: 0;
+    font-size: 96px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .news__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: calc(50% - 200px);
+    height: 1px;
+    background: #444444;
+  }
+
+  .news__title::after {
+    display: none;
+  }
+
+  .news__list {
+    margin-top: 24px;
+    padding-inline: 24px;
+    font-weight: 500;
+  }
+
+  .news__item {
+    margin-top: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .news__date {
+    font-size: 14px;
+  }
+
+  .news__heading {
+    overflow: hidden;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: inherit;
+  }
+
+  .news__btn {
+    width: 200px;
+    height: auto;
+    margin: 36px auto 0;
   }
 }
