@@ -21,11 +21,13 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <main>
@@ -241,7 +243,7 @@
         <hr class="news__divider" />
         <div class="news__body">
           <h2 class="news__title">NEWS</h2>
-          <div class="news__list">
+          <div class="news__list" data-js="fade">
             <article class="news__item">
               <time class="news__date" datetime="2026-02-02">2026.02.02</time>
               <h3 class="news__heading">
@@ -284,13 +286,24 @@
               </h3>
             </article>
           </div>
-          <a href="https://nayabashi-kick.com/information/">
-            <picture class="news__btn">
-              <img src="images/btn-more.webp" alt="ニュース一覧を詳しく見る" width="550" height="190" loading="lazy">
-            </picture>
-          </a>
+          <div class="news__action">
+            <a
+              class="news__button"
+              href="https://nayabashi-kick.com/information/"
+            >
+              <picture class="news__btn">
+                <img
+                  src="images/btn-more.webp"
+                  alt="ニュース一覧を詳しく見る"
+                  width="550"
+                  height="190"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+          </div>
         </div>
-        <hr class="news__divider--bold" />
+        <hr class="news__divider news__divider--bold" />
         <hr class="news__divider" />
       </section>
 

@@ -58,3 +58,22 @@ window.addEventListener("load", () => {
     speed: 1000,                // ← アニメーション時間（ms）
   });
 });
+
+// お知らせのフェードアニメーション
+window.addEventListener("load", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const el = document.querySelector('[data-js="fade"]');
+  if (!el) return;
+
+  gsap.from(el, {
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: el,
+      start: "top 80%",
+      toggleActions: "play none none none"
+    }
+  });
+});

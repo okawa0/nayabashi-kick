@@ -251,6 +251,10 @@ table {
   font-weight: inherit;
 }
 
+.news__action {
+  max-width: 1000px;
+}
+
 .news__btn {
   width: 200px;
   height: auto;
@@ -409,7 +413,7 @@ table {
   }
 
   .news__divider {
-    margin-top: 10px;
+    display: none;
   }
 
   .news__body {
@@ -469,9 +473,35 @@ table {
     font-weight: inherit;
   }
 
+  .news__action {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 16px auto 0;
+  }
+
+  .news__action::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 220px;
+    height: 1px;
+    background: #444444;
+    transform: translateY(-50%);
+  }
+
+  .news__button {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.news__button:hover {
+  transform: translateX(20px);
+}
+
   .news__btn {
     width: 200px;
-    height: auto;
-    margin: 36px auto 0;
   }
 }
