@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // カルーセルバナー
 window.addEventListener("load", () => {
-  const el = document.querySelector('[data-js="swiper"]');
+  const el = document.querySelector('[data-js="banner-swiper"]');
   if (!el) return;
 
   new Swiper(el, {
@@ -100,5 +100,28 @@ window.addEventListener("load", () => {
         toggleActions: "play none none none"
       }
     });
+  });
+});
+
+// テキストマスクのフェードアニメーション
+window.addEventListener("load", () => {
+  const el = document.querySelector('[data-js="text-swiper"]');
+  if (!el) return;
+
+  new Swiper(el, {
+    loop: true,
+    slidesPerView: 1,
+
+    effect: "fade",        // ← これを追加
+    fadeEffect: {
+      crossFade: true      // ← なめらかに重なる
+    },
+
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+
+    speed: 1000,           // フェードの時間（ms）
   });
 });

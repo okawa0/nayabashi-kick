@@ -271,6 +271,11 @@ table {
   width: 90%;
 }
 
+/* ---------- Text mask ---------- */
+.text-mask {
+  padding-block: 40px;
+}
+
 /* ================================
     3. Component Blocks
 ================================ */
@@ -503,15 +508,39 @@ table {
   }
 
   .news__button {
-  display: inline-block;
-  transition: transform 0.4s ease;
-}
+    display: inline-block;
+    transition: transform 0.4s ease;
+  }
 
-.news__button:hover {
-  transform: translateX(20px);
-}
+  .news__button:hover {
+    transform: translateX(20px);
+  }
 
   .news__btn {
     width: 200px;
+  }
+
+  /* ---------- Banner ---------- */
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  .banner__image {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  /* ---------- Text mask ---------- */
+  .text-mask {
+    padding-block: 40px;
+  }
+
+  .text-mask__image{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
