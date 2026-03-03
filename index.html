@@ -25,8 +25,18 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
     <script src="js/script.js" defer></script>
   </head>
   <body>
@@ -310,21 +320,50 @@
       <!-- バナー -->
       <section class="banner">
         <a href="https://sponago.com/saiyou/requirement/">
-          <picture class="banner__image">
-            <source srcset="images/banner-pro-support-recruit.webp" type="image/webp" />
-            <img src="images/banner-pro-support-recruit.webp" alt="プロ選手を全力サポート。プロを目指しながら働けるスタッフ募集のお知らせ" width="516" height="354" loading="lazy" />
+          <picture class="banner__image banner__image--left"  data-js="slide-image">
+            <source
+              srcset="images/banner-pro-support-recruit.webp"
+              type="image/webp"
+            />
+            <img
+              src="images/banner-pro-support-recruit.webp"
+              alt="プロ選手を全力サポート。プロを目指しながら働けるスタッフ募集のお知らせ"
+              width="516"
+              height="354"
+              loading="lazy"
+            />
           </picture>
         </a>
         <a href="https://nayabashi-kick.com/join/">
-          <picture class="banner__image">
-            <source srcset="images/banner-transfer-campaign-free.webp" type="image/webp" />
-            <img src="images/banner-transfer-campaign-free.webp" alt="のりかえ割キャンペーン。入会金と1か月分の会費が無料のお知らせ" width="500" height="300" loading="lazy" />
+          <picture class="banner__image banner__image--right"  data-js="slide-image">
+            <source
+              srcset="images/banner-transfer-campaign-free.webp"
+              type="image/webp"
+            />
+            <img
+              src="images/banner-transfer-campaign-free.webp"
+              alt="のりかえ割キャンペーン。入会金と1か月分の会費が無料のお知らせ"
+              width="500"
+              height="300"
+              loading="lazy"
+            />
           </picture>
         </a>
       </section>
 
       <!-- テキストマスク -->
-      <section class="text-mask"></section>
+      <section class="text-mask">
+        <picture class="text-mask__image">
+          <source srcset="images/text-mask.webp" type="image/webp" />
+          <img
+            src="images/text-mask.webp"
+            alt="TEXT MASK"
+            width="1000"
+            height="1000"
+            loading="lazy"
+          />
+        </picture>
+      </section>
 
       <!-- ジムの紹介・コンセプト -->
       <section class="about">

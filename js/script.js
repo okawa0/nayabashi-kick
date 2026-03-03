@@ -77,3 +77,28 @@ window.addEventListener("load", () => {
     }
   });
 });
+
+// バナーのフェードアニメーション
+window.addEventListener("load", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const images = document.querySelectorAll('[data-js="slide-image"]');
+  if (!images.length) return;
+
+  images.forEach((image) => {
+    const isLeft = image.classList.contains("banner__image--left");
+    const xValue = isLeft ? -200 : 200;
+
+    gsap.from(image, {
+      x: xValue,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: image,
+        start: "top 80%",
+        toggleActions: "play none none none"
+      }
+    });
+  });
+});
