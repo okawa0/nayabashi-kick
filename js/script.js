@@ -63,18 +63,20 @@ window.addEventListener("load", () => {
 window.addEventListener("load", () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  const el = document.querySelector('[data-js="fade"]');
-  if (!el) return;
+  const elements = document.querySelectorAll('[data-js="fade"]');
+  if (!elements.length) return;
 
-  gsap.from(el, {
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: el,
-      start: "top 80%",
-      toggleActions: "play none none none"
-    }
+  elements.forEach((el) => {
+    gsap.from(el, {
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 80%",
+        toggleActions: "play none none none"
+      }
+    });
   });
 });
 
