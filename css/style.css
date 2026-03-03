@@ -20,9 +20,9 @@ html {
 body {
   margin: 0;
   line-height: 1.6;
-  -webkit-text-size-adjust: 100%;
   font-family: var(--font-base);
   color: var(--color-base);
+  -webkit-text-size-adjust: 100%;
 }
 
 h1,
@@ -48,9 +48,8 @@ ol {
 img,
 picture {
   display: block;
-  max-width: 100%;
-  /* pictureで画像サイズを調整するために追加 */
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -93,7 +92,7 @@ table {
   display: none;
 }
 
-.hero-logo__official {
+.hero__logo-official {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -104,7 +103,7 @@ table {
   display: none;
 }
 
-.hero-logo__rotation {
+.hero__logo-rotation {
   position: absolute;
   top: 60%;
   left: 16px;
@@ -116,7 +115,7 @@ table {
   width: 100%;
 }
 
-.hero-logo__main {
+.hero__logo-main {
   position: absolute;
 }
 
@@ -143,8 +142,8 @@ table {
 .hero-scroll__text {
   position: absolute;
   bottom: 16px;
-  display: flex;
   z-index: 1;
+  display: flex;
   width: max-content;
   animation: scroll 35s linear infinite;
 }
@@ -214,8 +213,9 @@ table {
   gap: 20px;
   font-size: 32px;
   font-weight: 600;
-  letter-spacing: 2px;
   font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .news__title::before,
@@ -246,9 +246,9 @@ table {
 .news__heading {
   overflow: hidden;
   font-size: 14px;
+  font-weight: inherit;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-weight: inherit;
 }
 
 .news__action {
@@ -256,9 +256,9 @@ table {
 }
 
 .news__btn {
+  margin: 36px auto 0;
   width: 200px;
   height: auto;
-  margin: 36px auto 0;
 }
 
 /* ---------- Banner ---------- */
@@ -275,6 +275,35 @@ table {
 /* ---------- Text mask ---------- */
 .text-mask {
   padding-block: 40px;
+}
+
+.text-mask__image {
+  max-width: 1200px;
+}
+
+/* ---------- About ---------- */
+.about {
+  /* color: #fff; */
+}
+
+.about__title {
+  position: relative;
+  padding-left: 24px;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.about__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  transform: translateY(-50%);
 }
 
 /* ================================
@@ -314,7 +343,7 @@ table {
     opacity: 1;
   }
 
-  .hero-logo__official {
+  .hero__logo-official {
     position: absolute;
     top: 40%;
     left: auto;
@@ -323,10 +352,10 @@ table {
   }
 
   .hero-cta {
-    display: block;
     position: absolute;
     top: 60%;
     right: -18%;
+    display: block;
     width: 30vw;
     transition: right 1000ms ease;
   }
@@ -335,7 +364,7 @@ table {
     right: 0;
   }
 
-  .hero-logo__rotation {
+  .hero__logo-rotation {
     display: none;
   }
 
@@ -344,7 +373,7 @@ table {
     width: 100%;
   }
 
-  .hero-logo__main {
+  .hero__logo-main {
     position: absolute;
   }
 
@@ -442,8 +471,8 @@ table {
     margin-top: 0;
     font-size: 96px;
     font-weight: 600;
-    letter-spacing: 2px;
     font-style: italic;
+    letter-spacing: 2px;
     text-align: center;
   }
 
@@ -539,9 +568,9 @@ table {
     padding-block: 40px;
   }
 
-  .text-mask__image{
+  .text-mask__image {
+    margin: 0 auto;
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
   }
 }
