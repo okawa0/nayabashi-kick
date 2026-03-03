@@ -263,6 +263,7 @@ table {
 
 /* ---------- Banner ---------- */
 .banner {
+  overflow-x: hidden;
   margin-top: 32px;
 }
 
