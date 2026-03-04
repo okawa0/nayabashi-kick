@@ -76,6 +76,11 @@ table {
     2. Layout Blocks
 ================================ */
 
+.main__layout {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
@@ -263,6 +268,8 @@ table {
 
 /* ---------- Banner ---------- */
 .banner {
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
   margin-top: 32px;
 }
@@ -315,7 +322,7 @@ table {
 
 .about__text {
   width: 80%;
-  margin:16px 0 0 16px;
+  margin: 16px 0 0 16px;
   padding-left: 16px;
   font-size: 15px;
   line-height: 30px;
@@ -337,6 +344,7 @@ table {
     position: relative;
     overflow: hidden;
     aspect-ratio: 160 / 89;
+    order: 1;
   }
 
   .hero__image--sp {
@@ -444,6 +452,7 @@ table {
 
   .carousel-banner {
     margin-top: 56px;
+    order: 2;
   }
 
   .carousel-banner .swiper {
@@ -467,6 +476,7 @@ table {
   /* ---------- News ---------- */
   .news {
     margin-top: 24px;
+    order: 3;
   }
 
   .news__divider--bold {
@@ -569,9 +579,12 @@ table {
   /* ---------- Banner ---------- */
   .banner {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 32px;
+    /* order仮値 */
+    order: 100;
   }
 
   .banner__image {
@@ -582,11 +595,54 @@ table {
   /* ---------- Text mask ---------- */
   .text-mask {
     padding-block: 40px;
+    order: 4;
   }
 
   .text-mask__image {
     margin: 0 auto;
     width: 80%;
     max-width: 1200px;
+  }
+
+  /* ---------- About ---------- */
+  .about {
+    color: #fff;
+    order: 5;
+  }
+
+  .about__header {
+    padding-block: 64px;
+    background-image: url("../images/about__header-bg.webp");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about__title {
+    position: relative;
+    padding-left: 48px;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  .about__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    transform: translateY(-50%);
+  }
+
+  .about__text {
+    width: 80%;
+    margin: 16px 0 0 16px;
+    padding-left: 16px;
+    font-size: 15px;
+    line-height: 30px;
+    border-left: 1px solid #fff;
   }
 }
