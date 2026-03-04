@@ -289,15 +289,13 @@ table {
 }
 
 /* ---------- About ---------- */
-.about {
-  color: #fff;
-}
 
 .about__header {
   padding-block: 64px;
   background-image: url("../images/about__header-bg.webp");
   background-position: center;
   background-size: cover;
+  color: #fff;
 }
 
 .about__title {
@@ -330,7 +328,13 @@ table {
   border-left: 1px solid #fff;
 }
 
-.about__content{
+.about__br {
+  display: none;
+}
+
+.about__content {
+  position: relative;
+  padding-top: 96vw;
   width: 100%;
   height: 500px;
   background-image: url("../images/bg-blue-abstract.webp");
@@ -339,8 +343,21 @@ table {
   background-position: left top;
 }
 
-.about__br{
-  display: none;
+.about__image {
+  position: absolute;
+  right: 0;
+  top: -32px;
+  width: 80%;
+}
+
+.about__text-image {
+  width: 88%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.about__description{
+  
 }
 
 /* ================================
@@ -638,7 +655,7 @@ table {
 
   .about__title {
     position: relative;
-    padding-left: 144px;
+    padding-left: 10vw;
     font-size: 95px;
     font-weight: 600;
     font-style: italic;
@@ -650,7 +667,7 @@ table {
     position: absolute;
     top: 50%;
     left: 0;
-    width: 120px;
+    width: 8vw;
     height: 1px;
     background-color: #fff;
     transform: translateY(-50%);
@@ -659,13 +676,13 @@ table {
   .about__text {
     width: 680px;
     margin: 24px 0 0 16px;
-    padding-left: 144px;
+    padding-left: 10vw;
     font-size: 15px;
     line-height: 30px;
     border-left: none;
   }
 
-  .about__br{
+  .about__br {
     display: inline;
   }
 }
