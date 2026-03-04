@@ -288,7 +288,7 @@ table {
 
 .about__header {
   padding-block: 64px;
-  background-image: url(/images/about__header-bg.webp);
+  background-image: url("../images/about__header-bg.webp");
   background-position: center;
   background-size: cover;
 }
