@@ -399,6 +399,11 @@ table {
   background: #444444;
 }
 
+.point__subtitle{
+  margin-top: 16px;
+  text-align: center;
+}
+
 /* ================================
     3. Component Blocks
 ================================ */
