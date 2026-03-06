@@ -127,3 +127,25 @@ window.addEventListener("load", () => {
     speed: 1000,           // フェードの時間（ms）
   });
 });
+
+// pointスライダー
+const point = document.querySelector('[data-js="point-swiper"]');
+
+if (point) {
+  new Swiper(point, {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    centeredSlides: true,
+    loop: true,
+
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+
+    pagination: {
+      el: ".point-pagination",
+      clickable: true
+    }
+  });
+}
