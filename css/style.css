@@ -144,7 +144,7 @@ table {
   width: 65vw;
 }
 
-.hero-scroll__text {
+.hero__scroll-text {
   position: absolute;
   bottom: 16px;
   z-index: 1;
@@ -153,7 +153,7 @@ table {
   animation: scroll 35s linear infinite;
 }
 
-.hero-scroll__img {
+.hero__scroll-img {
   width: 350vw;
 }
 
@@ -176,19 +176,21 @@ table {
   margin-top: 56px;
 }
 
-.carousel-banner .swiper {
+.carousel-banner__swiper {
   --swiper-navigation-size: 4vw;
+  overflow: hidden;
 }
 
-.carousel-banner .swiper-button-prev {
+.carousel-banner__button-prev {
   color: #fff;
 }
 
-.carousel-banner .swiper-button-next {
+.carousel-banner__button-next {
   color: #fff;
 }
 
-.carousel-banner .swiper-pagination {
+.carousel-banner__pagination {
+  text-align:center ;
   position: static;
   --swiper-pagination-color: #000;
   --swiper-pagination-bullet-inactive-color: #555;
@@ -321,7 +323,8 @@ table {
 
 .about__text {
   width: 80%;
-  margin: 16px 0 0 16px;
+  margin-top: 16px;
+  margin-left: 16px;
   padding-left: 16px;
   font-size: 15px;
   line-height: 30px;
@@ -409,7 +412,7 @@ table {
   padding: 16px;
 }
 
-.point-pagination {
+.point__pagination {
   text-align: center;
   position: static;
   --swiper-pagination-color: #000;
@@ -510,7 +513,7 @@ table {
     display: none;
   }
 
-  .hero-scroll__text {
+  .hero__scroll-text {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -519,7 +522,7 @@ table {
     animation: scroll 35s linear infinite;
   }
 
-  .hero-scroll__img {
+  .hero__scroll-img {
     width: 240vw;
   }
 
@@ -547,19 +550,19 @@ table {
     order: 2;
   }
 
-  .carousel-banner .swiper {
+  .carousel-banner__swiper {
     --swiper-navigation-size: 4vw;
   }
 
-  .carousel-banner .swiper-button-prev {
+  .carousel-banner__button-prev {
     color: #fff;
   }
 
-  .carousel-banner .swiper-button-next {
+  .carousel-banner__button-next {
     color: #fff;
   }
 
-  .carousel-banner .swiper-pagination {
+  .carousel-banner__pagination {
     position: static;
     --swiper-pagination-color: #000;
     --swiper-pagination-bullet-inactive-color: #555;
@@ -781,13 +784,20 @@ table {
   }
 
   .point {
+    line-height: 1;
     order: 6;
+    padding-bottom: 64px;
+    background-image: url("../images/point__bg.webp");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f5f5f5;
   }
 
   .point__title {
     position: relative;
     display: block;
-    margin-top: 0;
+    margin-top: 16px;
     font-size: 96px;
     font-weight: 600;
     font-style: italic;
@@ -797,6 +807,23 @@ table {
 
   .point__title::before,
   .point__title::after {
+    display: none;
+  }
+
+  .point__subtitle {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .point__br {
+    display: none;
+  }
+
+  .point__swiper {
+    display: none;
+  }
+
+  .point__pagination {
     display: none;
   }
 }

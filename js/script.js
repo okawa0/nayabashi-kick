@@ -40,12 +40,12 @@ window.addEventListener("load", () => {
     spaceBetween: 16,
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".carousel-banner__button-next",
+      prevEl: ".carousel-banner__button-prev",
     },
 
     pagination: {
-      el: ".swiper-pagination",
+      el: ".carousel-banner__pagination",
       clickable: true,
     },
 
@@ -88,7 +88,7 @@ window.addEventListener("load", () => {
   if (!images.length) return;
 
   images.forEach((image) => {
-    const isLeft = image.classList.contains("banner__image--left");
+    const isLeft = image.classList.contains("banner__image--primary");
     const xValue = isLeft ? -200 : 200;
 
     gsap.from(image, {
@@ -144,7 +144,7 @@ if (point) {
     },
 
     pagination: {
-      el: ".point-pagination",
+      el: ".point__pagination",
       clickable: true
     }
   });
