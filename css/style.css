@@ -76,7 +76,7 @@ table {
     2. Layout Blocks
 ================================ */
 
-.main__layout {
+.layout {
   display: flex;
   flex-direction: column;
 }
@@ -104,7 +104,7 @@ table {
   width: 20vw;
 }
 
-.hero-cta {
+.hero__cta {
   display: none;
 }
 
@@ -177,8 +177,8 @@ table {
 }
 
 .carousel-banner__swiper {
-  --swiper-navigation-size: 4vw;
   overflow: hidden;
+  --swiper-navigation-size: 4vw;
 }
 
 .carousel-banner__button-prev {
@@ -190,8 +190,8 @@ table {
 }
 
 .carousel-banner__pagination {
-  text-align:center ;
   position: static;
+  text-align:center ;
   --swiper-pagination-color: #000;
   --swiper-pagination-bullet-inactive-color: #555;
 }
@@ -428,7 +428,7 @@ table {
 =================================== */
 
 @media (min-width: 768px) {
-  .main__layout {
+  .layout {
     display: flex;
     flex-direction: column;
   }
@@ -470,7 +470,7 @@ table {
     width: 10vw;
   }
 
-  .hero-cta {
+  .hero__cta {
     position: absolute;
     top: 60%;
     right: -18%;
@@ -479,7 +479,7 @@ table {
     transition: right 1000ms ease;
   }
 
-  .hero-cta:hover {
+  .hero__cta:hover {
     right: 0;
   }
 
