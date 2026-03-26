@@ -191,7 +191,7 @@ table {
 
 .carousel-banner__pagination {
   position: static;
-  text-align:center ;
+  text-align: center;
   --swiper-pagination-color: #000;
   --swiper-pagination-bullet-inactive-color: #555;
 }
@@ -373,6 +373,8 @@ table {
   transform: translateX(16px);
 }
 
+/* ---------- Point ---------- */
+
 .point {
   padding-bottom: 64px;
   background-image: url("../images/point__bg.webp");
@@ -417,6 +419,10 @@ table {
   position: static;
   --swiper-pagination-color: #000;
   --swiper-pagination-bullet-inactive-color: #555;
+}
+
+.point__list {
+  display: none;
 }
 
 /* ================================
@@ -747,7 +753,7 @@ table {
 
   .about__content {
     position: relative;
-    padding-block: 80px;
+    padding-block: 80px 0;
     width: 100%;
     background-image: none;
     background-repeat: no-repeat;
@@ -783,10 +789,12 @@ table {
     transform: translateX(20px);
   }
 
+  /* ---------- Point ---------- */
+
   .point {
     line-height: 1;
     order: 6;
-    padding-bottom: 64px;
+    padding-block: 64px;
     background-image: url("../images/point__bg.webp");
     background-position: center top;
     background-repeat: no-repeat;
@@ -825,5 +833,46 @@ table {
 
   .point__pagination {
     display: none;
+  }
+
+  .point__list {
+    display: grid;
+    margin: 56px auto 0;
+    width: calc(100% - 176px);
+    max-width: 1600px;
+    gap: 48px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f5f5f5;
+  }
+
+  .point__item-title {
+    text-align: center;
+    margin-top: -8px;
+    font-family: "Noto Sans JP", Sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #a82824;
+    text-transform: uppercase;
+  }
+
+  .point__catch {
+    text-align: center;
+    margin-top: 16px;
+    font-family: "Noto Sans JP", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .point__description {
+    margin: 24px auto 0;
+    width: 85%;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .point__list {
+    width: calc(100% - 320px);
+    gap: 88px;
   }
 }
