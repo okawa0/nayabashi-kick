@@ -432,7 +432,6 @@ table {
   background-position: center;
   background-size: cover;
   color: #fff;
-  order: 7;
   overflow: hidden;
 }
 
@@ -485,6 +484,46 @@ table {
 .lesson__image--right {
   margin-top: -40px;
   margin-right: -40px;
+}
+
+/* ---------- TRAINERS ---------- */
+.trainers{
+  padding-bottom: 72px;
+}
+
+.trainers__button {
+  display: flex;
+  justify-content: end;
+  padding-right: 28px;
+  margin-top: -48px;
+  transition: transform 0.4s ease;
+}
+
+.trainers__button:hover {
+  transform: translateX(20px);
+}
+
+.trainers__button-image {
+  width: 200px;
+  height: auto;
+}
+
+/* ---------- SCHEDULE ---------- */
+.schedule__button {
+  display: flex;
+  justify-content: end;
+  padding-right: 28px;
+  margin-top: -48px;
+  transition: transform 0.4s ease;
+}
+
+.schedule__button:hover {
+  transform: translateX(20px);
+}
+
+.schedule__button-image {
+  width: 200px;
+  height: auto;
 }
 
 /* ================================
@@ -745,9 +784,7 @@ table {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 32px;
-    /* order仮値 */
-    order: 100;
+    order: 8;
   }
 
   .banner__image {
@@ -1002,6 +1039,33 @@ table {
   .lesson__image--right {
     margin-top: 0;
     margin-right: 0;
+  }
+
+  /* ---------- TRAINERS ---------- */
+  .trainers {
+    order: 8;
+  }
+
+  .trainers__image {
+    width: 80%;
+  }
+
+  .trainers__button {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    padding-right: 88px;
+    margin-top: -16px;
+    transition: transform 0.4s ease;
+  }
+
+  .trainers__button:hover {
+    transform: translateX(20px);
+  }
+
+  .trainers__button-image {
+    width: 200px;
+    height: auto;
   }
 }
 
