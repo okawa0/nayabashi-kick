@@ -432,6 +432,8 @@ table {
   background-position: center;
   background-size: cover;
   color: #fff;
+  order: 7;
+  overflow: hidden;
 }
 
 .lesson__title {
@@ -470,9 +472,19 @@ table {
   margin-top: 48px;
 }
 
-.lesson__image{
+.lesson__image {
+  margin: 0 auto;
   width: 280px;
   height: auto;
+}
+
+.lesson__image--left {
+  margin-left: -40px;
+}
+
+.lesson__image--right {
+  margin-top: -40px;
+  margin-right: -40px;
 }
 
 /* ================================
@@ -926,11 +938,84 @@ table {
     width: 85%;
     line-height: 28px;
   }
+
+  /* ---------- LESSON ---------- */
+  .lesson {
+    line-height: 1;
+    order: 6;
+    padding-block: 64px;
+    background-image: url("../images/lesson-bg--pc.webp");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .lesson__title {
+    position: relative;
+    display: block;
+    margin-top: 16px;
+    font-size: 96px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #333;
+  }
+
+  .lesson__title::before,
+  .lesson__title::after {
+    display: none;
+  }
+
+  .lesson__subtitle {
+    margin-top: 16px;
+    text-align: center;
+    color: #333;
+  }
+
+  .lesson__br {
+    display: none;
+  }
+
+  .lesson__list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 72px;
+  }
+
+  .lesson__image {
+    margin: 0 auto;
+    width: 320px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .lesson__image:hover {
+    transform: scale(1.1);
+  }
+
+  .lesson__image--left {
+    margin-left: 0;
+  }
+
+  .lesson__image--right {
+    margin-top: 0;
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 1024px) {
   .point__list {
     width: calc(100% - 320px);
     gap: 88px;
+  }
+
+  .lesson__list {
+    gap: 64px;
+  }
+
+  .lesson__image {
+    width: 400px;
   }
 }
