@@ -487,7 +487,7 @@ table {
 }
 
 /* ---------- TRAINERS ---------- */
-.trainers{
+.trainers {
   padding-bottom: 72px;
 }
 
@@ -509,11 +509,14 @@ table {
 }
 
 /* ---------- SCHEDULE ---------- */
+.schedule {
+  position: relative;
+}
+
 .schedule__button {
-  display: flex;
-  justify-content: end;
-  padding-right: 28px;
-  margin-top: -48px;
+  position: absolute;
+  top: 78%;
+  left: 40%;
   transition: transform 0.4s ease;
 }
 
@@ -784,12 +787,29 @@ table {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 80px; /* 要素間の距離はgapで管理 */
     order: 8;
   }
 
+  /* 各バナー */
   .banner__image {
-    margin: 0 auto;
-    width: 90%;
+    width: 100%;
+    overflow: hidden; /* ←超重要 */
+  }
+
+  /* 画像 */
+  .banner__image img {
+    width: 100%;
+    height: auto;
+    transition:
+      transform 0.4s ease,
+      filter 0.4s ease;
+  }
+
+  /* ホバー */
+  .banner__image:hover img {
+    transform: scale(1.1);
+    filter: grayscale(100%);
   }
 
   /* ---------- Text mask ---------- */
@@ -979,7 +999,7 @@ table {
   /* ---------- LESSON ---------- */
   .lesson {
     line-height: 1;
-    order: 6;
+    order: 7;
     padding-block: 64px;
     background-image: url("../images/lesson-bg--pc.webp");
     background-position: center top;
@@ -1066,6 +1086,23 @@ table {
   .trainers__button-image {
     width: 200px;
     height: auto;
+  }
+
+  /* ---------- SCHEDULE ---------- */
+
+  .schedule {
+    order: 9;
+    position: relative;
+  }
+
+  .schedule__image {
+    margin-left: auto;
+    width: 90%;
+  }
+
+  .schedule__button {
+    left: 20%;
+    top: 30%;
   }
 }
 
