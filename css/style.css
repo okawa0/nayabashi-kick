@@ -787,13 +787,13 @@ table {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 80px; /* 要素間の距離はgapで管理 */
+    gap: 8px; /* 要素間の距離はgapで管理 */
     order: 8;
   }
 
   /* 各バナー */
   .banner__image {
-    width: 100%;
+    width: 90%;
     overflow: hidden; /* ←超重要 */
   }
 
@@ -1097,11 +1097,11 @@ table {
 
   .schedule__image {
     margin-left: auto;
-    width: 90%;
+    width: 80%;
   }
 
   .schedule__button {
-    left: 20%;
+    left: 30%;
     top: 30%;
   }
 }
