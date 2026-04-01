@@ -550,6 +550,7 @@ table {
     overflow: hidden;
     aspect-ratio: 160 / 89;
     order: 1;
+    height: 90vh;
   }
 
   .hero__image--sp {
@@ -559,7 +560,7 @@ table {
 
   .hero__image {
     position: absolute;
-    top: 0;
+    top: -120px;
     left: 0;
     display: block;
     width: 100%;
@@ -577,15 +578,15 @@ table {
     top: 40%;
     left: auto;
     right: 16px;
-    width: 10vw;
+    width: 7vw;
   }
 
   .hero__cta {
     position: absolute;
     top: 60%;
-    right: -18%;
+    right: -12%;
     display: block;
-    width: 30vw;
+    width: 20vw;
     transition: right 1000ms ease;
   }
 
