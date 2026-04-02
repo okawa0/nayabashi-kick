@@ -1071,10 +1071,10 @@ table {
   }
 
   .trainers__button {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: end;
-    padding-right: 88px;
+    padding-right: 16px;
     margin-top: -16px;
     transition: transform 0.4s ease;
   }
@@ -1124,6 +1124,11 @@ table {
 @media (min-width: 1920px) {
   .trainers__image {
     width: 80%;
+  }
+
+    .trainers__button {
+    width: 80%;
+    padding-right: 88px;
   }
 
     .schedule__image {
