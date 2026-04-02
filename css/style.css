@@ -1067,7 +1067,7 @@ table {
   }
 
   .trainers__image {
-    width: 80%;
+    width: 90%;
   }
 
   .trainers__button {
@@ -1097,7 +1097,7 @@ table {
 
   .schedule__image {
     margin-left: auto;
-    width: 80%;
+    width: 90%;
   }
 
   .schedule__button {
@@ -1118,5 +1118,15 @@ table {
 
   .lesson__image {
     width: 400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .trainers__image {
+    width: 80%;
+  }
+
+    .schedule__image {
+    width: 80%;
   }
 }
