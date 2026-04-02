@@ -574,9 +574,9 @@ table {
 
   .hero__logo-official {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: auto;
-    right: 16px;
+    right: 8px;
     width: 7vw;
   }
 
